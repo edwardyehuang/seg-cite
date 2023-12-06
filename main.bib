@@ -1,4 +1,5 @@
 
+
 @String(PAMI  = {IEEE TPAMI})
 @String(IJCV  = {IJCV})
 @String(CVPR  = {CVPR})
@@ -25,7 +26,7 @@
 @String(CSVT = {IEEE TCSVT})
 
 
-
+@String(IEEE = {Proceedings of the IEEE})
 @String(PAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence})
 @String(IJCV = {International Journal of Computer Vision})
 @String(CVPR= {IEEE Conference on Computer Vision and Pattern Recognition})
@@ -50,6 +51,7 @@
 @String(AAAI = {AAAI})
 @String(CVPRW= {IEEE Conf. Comput. Vis. Pattern Recog. Worksh.})
 @String(CSVT = {IEEE Trans. Circuit Syst. Video Technol.})
+@String(IC3DV = {International Conference on 3D Vision})
 
 @String(SPL	= {IEEE Sign. Process. Letters})
 @String(VR   = {Vis. Res.})
@@ -59,8 +61,20 @@
 @String(CGF  = {Comput. Graph. Forum})
 @String(CVM = {Computational Visual Media})
 
+@String(TMLR = {Transactions on Machine Learning Research})
 
 
+
+@article{cLeNet5,
+  author={Yann Lecun. and Léon Bottou. and Yoshua Bengio. and Patrick Haffner},
+  journal=IEEE, 
+  title={Gradient-based learning applied to document recognition}, 
+  year={1998},
+  volume={86},
+  number={11},
+  pages={2278-2324},
+  doi={10.1109/5.726791}
+}
 
 @article{cPascalVOC,
 	author = "Mark Everingham and Luc Van Gool and Christopher K.l.Wiliams and John Winn and Andrew Zisserman",
@@ -76,6 +90,15 @@
 	year = "2011",
 }
 
+
+@InProceedings{cAlexNet,
+	author = "Alex Krizhevsky and Ilya Sutskever and Geoffrey E Hinton",
+	title = "Imagenet classification with deep convolutional neural networks",
+	booktitle = NIPS,
+	year = "2012",
+}
+
+
 @InProceedings{cLeakyrelu,
 	author = "Andrew L. Mass and Awni Y. Hannun and Andrew Y. Ng",
 	title = "Rectifier Nonlinearities Improve Neural Network Acoustic Models",
@@ -90,6 +113,28 @@
 	year = "2014",
 }
 
+@InProceedings{cUDS,
+	author = "Jian Dong and Qiang Chen and Shuicheng Yan and Alan Yuille",
+	title = "Towards Unified Object Detectionand Semantic Segmentation",
+	booktitle = ECCV,
+	year = "2014",
+}
+
+@InProceedings{cDeepLabv1,
+	author = "Liang-Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L Yuille",
+	title = "Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs",
+	booktitle = ICLR,
+	year = "2014"
+}
+
+
+@inproceedings{cVGG,
+	author = "Simonyan, K. and Zisserman, A.",
+	title = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+	booktitle = ICLR,
+	year = "2015"
+}
+
 @inproceedings{ cFCN,
 	author = "Jonathan Long and Evan Shelhamer and Trevor Darrell",
 	title = "Fully convolutional networks for semantic segmentation",
@@ -97,11 +142,18 @@
 	year = "2015"
 }
 
-@inproceedings{cVGG,
-	author = "Simonyan, K. and Zisserman, A.",
-	title = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-	booktitle = ICLR,
+@inproceedings{cUNet,
+	author = "Olaf Ronneberger and Philipp Fischer and Thomas Brox",
+	title = "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+	booktitle = "MICCAI",
 	year = "2015"
+}
+
+@inproceedings{cMSCA,
+	author = "Fisher Yu and Vladlen Koltun",
+	title = "Multi-Scale Context Aggregation by Dilated Convolutions",
+	booktitle = ICLR,
+	year = "2016"
 }
 
 @inproceedings{cResnet,
@@ -119,6 +171,20 @@
 	year =  "2016"
 }
 
+@inproceedings{cCenterLoss,
+	author = "Yandong Wen1 and Kaipeng Zhang and Zhifeng Li and Yu Qiao",
+	title = " Discriminative Feature Learning Approach for Deep Face Recognition",
+	booktitle = ECCV,
+	year = "2016"
+}
+
+@inproceedings{cVNet,
+	author = "Fausto Milletari and Nassir Navab and Seyed-Ahmad Ahmadi",
+	title = " Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation",
+	booktitle = IC3DV,
+	year = "2016"
+}
+
 @inproceedings{cADE20K,
 	author = " Bolei Zhou and Hang Zhao and Xavier Puig and Sanja Fidler and Adela Barriuso and Antonio Torralba",
 	title =  "Scene Parsing through ADE20K Dataset.",
@@ -134,10 +200,25 @@
 }
 
 
+@inproceedings{ cRefineNet,
+	author = "G. Lin and A. Milan and C. Shen and I. Reid",
+	title = "RefineNet: Multi-path refinement networks for high-resolution semantic segmentation.",
+	booktitle = CVPR,
+	year = "2017"
+}
+
+
 @article{cDeepLab,
 	author = "Liang-Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L Yuille",
 	title = "DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs",
 	journal = PAMI,
+	year = "2017"
+}
+
+@inproceedings{cFPN,
+	author = "Tsung-Yi Lin and Piotr Dollá and Ross Girshick and Kaiming He and Bharath Hariharan and Serge Belongie",
+	title =  "Feature Pyramid Networks for Object Detection",
+	booktitle = CVPR,
 	year = "2017"
 }
 
@@ -158,6 +239,12 @@
 	year = "2017",
 }
 
+@InProceedings{cFocalLoss,
+	author = "Tsung-Yi Lin and Priya Goyal and Ross Girshick and Kaiming He and Piotr Dollar",
+	title = "Focal Loss for Dense Object Detection",
+	booktitle = CVPR,
+	year = "2017",
+}
 
 @InProceedings{cAttentionIsAllYourNeed,
 	author = "Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Łukasz Kaiser and Illia Polosukhin",
@@ -224,6 +311,13 @@
 	year = "2018"
 }
 
+@inproceedings{cUper,
+	author = "Tete Xiao and Yingcheng Liu and Bolei Zhou and Yuning Jiang and Jian Sun",
+	title =  "Unified Perceptual Parsing for Scene Understanding",
+	booktitle = ECCV,
+	year =  "2018"
+}
+
 @inproceedings{cCBAM,
 	author = "Sanghyun Woo and Jongchan Park and Joon-Young Lee and So Kweon",
 	title =  "Convolutional Block Attention Module",
@@ -238,11 +332,47 @@
 	year = "2018"
 }
 
+@inproceedings{ cExFuse,
+	author = "Zhenli Zhang and Xiangyu Zhang and Chao Peng and Xiangyang Xue and Jian Sun",
+	title = "ExFuse: enhancing feature fusion for semantic segmentation",
+	booktitle = ECCV,
+	year = "2018"
+}
+
 @inproceedings{cA2Net,
 	author = "Yunpeng Chen and Yannis Kalantidis and Jianshu Li and Shuicheng Yan and Jiashi Feng",
 	title =  "A2-Nets: Double Attention Networks",
 	booktitle = NIPS,
 	year =  "2018"
+}
+
+@article {cUMAP,
+    author = {Sainburg, Tim and McInnes, Leland and Gentner, Timothy Q.},
+    title = {Parametric UMAP: learning embeddings with deep neural networks for representation and semi-supervised learning},
+    journal = {ArXiv e-prints},
+    archivePrefix = "arXiv",
+    eprint = {2009.12981},
+    primaryClass = "stat.ML",
+    keywords = {Statistics - Machine Learning,
+                Computer Science - Computational Geometry,
+                Computer Science - Learning},
+    year = 2020,
+    }
+
+@article{ cSDN,
+	author = "Jun Fu and Jing Liu and Yuhang Wang and Jin Zhou and Changyong Wang and Hanqing Lu",
+	title = "Stacked Deconvolutional Network for Semantic Segmentation",
+	journal = "IEEE Transaction on Image Processing",
+	year = "2019",
+	pages = "1-1"
+	
+}
+
+@inproceedings{cBagOfTricks,
+	author = "Tong He and Zhi Zhang and Hang Zhang and Zhongyue Zhang and Junyuan Xie and Mu Li",
+	title =  "Bag of Tricks for Image Classification with Convolutional Neural Networks",
+	booktitle = CVPR,
+	year =  "2019"
 }
 
 @inproceedings{cDualAttention,
@@ -281,6 +411,13 @@
 	year = "2019"
 }
 
+@inproceedings{ cPanopticFPN,
+	author = "Alexander Kirillov and Ross Girshick and Kaiming He and Piotr Dollar",
+	title = "Panoptic Feature Pyramid Networks",
+	booktitle = CVPR,
+	year = "2019"
+}
+
 @inproceedings{ cPanopticSeg,
 	author = "Alexander Kirillov and Kaiming He and Ross Girshick and Carsten Rother and Piotr Dollar",
 	title = "Panoptic Segmentation",
@@ -288,11 +425,47 @@
 	year = "2019"
 }
 
+@inproceedings{ cACNet,
+	author = "Jun Fu and Jing Liu and Yuhang Wang and Yong Li and Yongjun Bao and Jinhui Tang and Hanqing Lu",
+	title = "Adaptive Context Network for Scene Parsing",
+	booktitle = ICCV,
+	year = "2019"
+}
+
+@inproceedings{ cBYOT,
+	author = "Linfeng Zhang and Jiebo Song and Anni Gao and Jingwei Chen and Chenglong Bao and Kaisheng Ma",
+	title = "Be Your Own Teacher: Improve the Performance of Convolutional Neural
+Networks via Self Distillation",
+	booktitle = ICCV,
+	year = "2019"
+}
+
+@misc{cFastFCN,
+	title={FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation},
+	author={Wu, Huikai and Zhang, Junge and Huang, Kaiqi and Liang, Kongming and Yu Yizhou},
+	year=2019,
+	archivePrefix="arXiv",
+	primaryClass="cs.CV"
+}
+
+@inproceedings{cRethinkingImageNet,
+	author = "Kaiming He and Ross Girshick and Piotr Dollar",
+	title =  "Rethinking ImageNet Pre-Training",
+	booktitle = ICCV,
+	year =  "2019"
+}
 
 
 @inproceedings{cANNN,
 	author = "Zhen Zhu and Mengde Xu and Song Bai and Tengteng Huang and Xiang Bai",
 	title =  "Asymmetric Non-local Neural Networks for Semantic Segmentation",
+	booktitle = ICCV,
+	year =  "2019"
+}
+
+@inproceedings{cGSCNN,
+	author = "Takikawa, Towaki and Acuna, David and Jampani, Varun and Fidler, Sanja",
+	title =  {Gated-SCNN: Gated Shape CNNs for Semantic Segmentation},
 	booktitle = ICCV,
 	year =  "2019"
 }
@@ -314,7 +487,7 @@
 
 
 @inproceedings{ cEfficientNet,
-	author = "Mingxing Tan and Quoc Le",
+	author = "Tan Mingxing and Le Quoc",
 	title = "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
 	booktitle = ICML,
 	year = "2019"
@@ -342,6 +515,13 @@
 	year = "2020"
 }
 
+@inproceedings{ cPanopticDeepLab,
+	author = "Bowen Cheng and Maxwell D. Collins and Yukun Zhu and Ting Liu and Thomas S. Huang and Hartwig Adam and Liang-Chieh Chen",
+	title = {Panoptic-DeepLab: A Simple, Strong, and Fast Baseline for Bottom-Up Panoptic Segmentation},
+	booktitle = CVPR,
+	year = "2020"
+}
+
 @inproceedings{cPointRend,
   	title = "PointRend: Image Segmentation as Rendering",
   	author = "Alexander Kirillov and Yuxin Wu and Kaiming He and Ross Girshick",
@@ -356,6 +536,20 @@
 	year = "2020"
 }
 
+@inproceedings{ cHANet,
+	author = "Sungha Choi and Joanne T. Kim and Jaegul Choo",
+	title = "Cars Can’t Fly up in the Sky: Improving Urban-Scene Segmentation via Height-driven Attention Networks",
+	booktitle = CVPR,
+	year = "2020"
+}
+
+@article{cHRNet,
+	author = "Jingdong Wang and Ke Sun and Tianheng Cheng and Borui Jiang and Chaorui Deng and Yang Zhao and Dong Liu and Yadong Mu and Mingkui Tan and Xinggang Wang and Wenyu Liu and Bin Xiao",
+	title =  "Deep High-Resolution Representation Learning for Visual Recognition",
+	journal = PAMI,
+	year =  "2020"
+}
+
 @inproceedings{ cOCR,
 	author = "Yuhui Yuan and Xilin Chen and Jingdong Wang",
 	title = "Object-Contextual Representations for Semantic Segmentation",
@@ -366,6 +560,21 @@
 @inproceedings{ cSegFix,
 	author = "Yuhui Yuan and Jingyi Xie and Xilin Chen and Jingdong Wang",
 	title = "SegFix: Model-Agnostic Boundary Refinement for Segmentation",
+	booktitle = ECCV,
+	year = "2020"
+}
+
+@inproceedings{ cDETR,
+	author = "Nicolas Carion and Francisco Massa and Gabriel Synnaeve and Nicolas Usunier and Alexander Kirillov, Sergey Zagoruyko",
+	title = "End-to-End Object Detection with Transformers",
+	booktitle = ECCV,
+	year = "2020"
+}
+
+@inproceedings{ cDecoupleSegNet,
+	author = "Li, Xiangtai and Li, Xia and Zhang, Li and Cheng Guangliang and Shi, Jianping and 
+    Lin, Zhouchen and Tong, Yunhai and Tan, Shaohua",
+	title = {Improving Semantic Segmentation via Decoupled Body and Edge Supervision},
 	booktitle = ECCV,
 	year = "2020"
 }
@@ -399,6 +608,16 @@
     year    ="2020"
 }
 
+
+@article{cKSAC,
+    title   ="See More Than Once--Kernel-Sharing Atrous Convolution for Semantic Segmentation",
+    author  ="Ye Huang and Qingqing Wang and Wenjing Jia and Xiangjian He",
+    journal ="Neuro Computing",
+    year    ="2021"
+}
+
+
+
 @inproceedings{cViT,
   title="An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
   author="Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and  Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil",
@@ -413,12 +632,13 @@
 	year = "2021"
 }
 
-@InProceedings{cDPT,
-	author = "Ren\'{e} Ranftl and Alexey Bochkovskiy and Vladlen Koltun",
-	title = "Vision Transformers for Dense Prediction",
-	booktitle = ICCV,
-	year = "2021",
+@inproceedings{cMaXDeepLab,
+    title = "MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers", 
+    author="Huiyu Wang and Yukun Zhu and Hartwig Adam and Alan Yuille and Liang-Chieh Chen",
+    booktitle = CVPR,
+	year = "2021"
 }
+
 
 @article{cTNet,
     title   ="CTNet: Context-based Tandem Network for Semantic Segmentation",
@@ -427,11 +647,54 @@
     year    ="2021"
 }
 
-@article{cSegFormer,
-  title ="SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers",
-  author ="Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M and Luo, Ping",
-  journal ="arXiv preprint arXiv:2105.15203",
-  year ="2021"
+@inproceedings{cDependencyNet,
+    title = "Exploit Visual Dependency Relations for Semantic Segmentation", 
+    author="Mingyuan Liu and Dan Schonfeld and Wei Tang",
+    booktitle = CVPR,
+	year = "2021"
+}
+
+@inproceedings{cRepVGG,
+title={Repvgg: Making vgg-style convnets great again},
+author={Ding, Xiaohan and Zhang, Xiangyu and Ma, Ningning and Han, Jungong and Ding, Guiguang and Sun, Jian},
+booktitle= CVPR,
+pages={13733--13742},
+year={2021}
+}
+
+@article{cCPvT,
+    title   ="Conditional Positional Encodings for Vision Transformers",
+    author  ="Xiangxiang Chu and Zhi Tian and Bo Zhang and Xinlong Wang and Xiaolin Wei and Huaxia Xia and Chunhua Shen",
+    journal ="arXiv preprint arXiv:2102.10882",
+    year    ="2021"
+}
+
+@inproceedings{cSegmenter,
+	author    = "Strudel Robin and Garcia Ricardo and Laptev Ivan and Schmid Cordelia",
+	title     = "Segmenter: Transformer for Semantic Segmentation",
+	booktitle = "ICCV",
+	year      = "2021",
+}
+
+@inproceedings{cDPT,
+	author    = "Ren\'{e} Ranftl and Alexey Bochkovskiy and Vladlen Koltun",
+	title     = "Vision Transformers for Dense Prediction",
+	booktitle = "ICCV",
+	year      = "2021",
+}
+
+@inproceedings{cSwin,
+  title = "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+  author = "Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining",
+  booktitle = "ICCV",
+  year = "2021"
+}
+
+@inproceedings{cFaPN,
+  title = "FaPN: Feature-aligned Pyramid Network for Dense Image Prediction",
+  author = "Shihua Huang and Zhichao Lu and Ran Cheng and Cheng He",
+  booktitle = "ICCV",
+  year = "2021"
 }
 
 @article{cOCNet,
@@ -440,3 +703,189 @@
 	journal = IJCV,
 	year =  "2021"
 }
+
+@inproceedings{cSegFormer,
+  title ="SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers",
+  author ="Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M and Luo, Ping",
+  booktitle = NIPS,
+  year ="2021"
+}
+
+@inproceedings{cHRFormer,
+  title ="HRFormer: High-Resolution Transformer for Dense Prediction",
+  author ="Yuhui Yuan and Rao Fu and Lang Huang and Weihong Lin and Chao Zhang and Xilin Chen and Jingdong Wang",
+  booktitle = NIPS,
+  year ="2021"
+}
+
+@inproceedings{cMaskFormer,
+  title={Per-Pixel Classification is Not All You Need for Semantic Segmentation},
+  author={Bowen Cheng and Alexander G. Schwing and Alexander Kirillov},
+  booktitle= NIPS,
+  year={2021}
+}
+
+@inproceedings{ cAttentionIsNotAllYouNeed,
+	author = "Yihe Dong and Jean-Baptiste Cordonnier and Andreas Loukas",
+	title = "Attention is Not All You Need: Pure Attention Loses Rank Doubly Exponentially with Depth",
+	booktitle = ICML,
+	year = "2021"
+}
+
+@InProceedings{cCAA,
+	author = "Ye Huang and Di Kang and Wenjing Jia and Xiangjian He and Liu liu",
+	title = "Channelized Axial Attention - Considering Channel Relation within Spatial Attention for Semantic Segmentation",
+	booktitle = AAAI,
+	year = "2022",
+}
+
+@inproceedings{cConvNeXT,
+    title = {A ConvNet for the 2020s}, 
+    author={Zhuang Liu and Hanzi Mao and Chao-Yuan Wu and Christoph Feichtenhofer and Trevor Darrell and Saining Xie},
+    booktitle = CVPR,
+	year = "2022"
+}
+
+@inproceedings{cMask2Former,
+  title={Masked-attention Mask Transformer for Universal Image Segmentation},
+  author={Bowen Cheng and Ishan Misra and Alexander G. Schwing and Alexander Kirillov and Rohit Girdhar},
+  booktitle= CVPR,
+  year={2022}
+}
+
+@inproceedings{cHRViT,
+  title={Multi-Scale High-Resolution Vision Transformer for Semantic Segmentation},
+  author={Jiaqi Gu and Hyoukjun Kwon and Dilin Wang and Wei Ye and Meng Li and Yu-Hsin Chen and Liangzhen Lai and Vikas Chandra and David Z. Pan},
+  booktitle= CVPR,
+  year={2022}
+}
+
+@inproceedings{cMetaFormer,
+  title={MetaFormer Is Actually What You Need for Vision},
+  author={Yu, Weihao and Luo, Mi and Zhou, Pan and Si, Chenyang and Zhou, Yichen and Wang, Xinchao and Feng, Jiashi and Yan, Shuicheng},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{cMAE,
+  title={Masked Autoencoders Are Scalable Vision Learners
+},
+  author={Kaiming He and Xinlei Chen and Saining Xie and Yanghao Li and Piotr Dollár and Ross Girshick},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{cCAR,
+  author = {Ye Huang and Di Kang and Liang Chen and Xuefei Zhe and Wenjing Jia and Linchao Bao and Xiangjian He},
+  title = {CAR: Class-aware Regularizations for Semantic Segmentation},
+  booktitle = ECCV,
+  year = {2022},
+}
+
+@inproceedings{cRankSeg,
+  author = {He, Haodi and Yuan, Yuhui and Yue, Xiangyu and Hu, Han},
+  title = {RankSeg: Adaptive Pixel Classification with Image Category Ranking for Segmentation},
+  booktitle = ECCV,
+  year = {2022},
+}
+
+
+@inproceedings{cMaxViT,
+  author = {Zhengzhong Tu and Hossein Talebi and Han Zhang and Feng Yang and Peyman Milanfar, Alan Bovik and Yinxiao Li},
+  title = {MaxViT: Multi-Axis Vision Transformer},
+  booktitle = ECCV,
+  year = {2022},
+}
+
+@inproceedings{cKMaXDeepLab,
+  author = {Qihang Yu and Huiyu Wang and Siyuan Qiao and Maxwell Collins and Yukun Zhu and Hartwig Adam and Alan Yuille and Liang-Chieh Chen},
+  title = {kMaX-DeepLab: k-Means Mask Transformer},
+  booktitle = ECCV,
+  year = {2022},
+}
+
+@inproceedings{cSegDeformer,
+  author = {Bowen Shi and Dongsheng Jiang and Xiaopeng Zhang and Han Li and Wenrui Dai and Junni Zou and Hongkai Xiong and Qi Tian},
+  title = {A Transformer-based Decoder for Semantic Segmentation with Multi-level Context Mining},
+  booktitle = ECCV,
+  year = {2022},
+}
+
+@article{cVUPIViT,
+  title ="Visualizing and Understanding Patch Interactions in Vision Transformer",
+  author ="Jie Ma and Yalong Bai and Bineng Zhong and Wei Zhang and Ting Yao and Tao Mei",
+  journal ="arXiv preprint arXiv:2203.05922",
+  year ="2022"
+}
+
+@inproceedings{cSegNeXt,
+  author = {Meng-Hao Guo and Cheng-Ze Lu and Qibin Hou and Zheng-Ning Liu and Ming-Ming Cheng and Shi-Min Hu},
+  title = {SegNeXt: Rethinking Convolutional Attention Design for Semantic Segmentation},
+  booktitle = NIPS,
+  year = {2022},
+}
+
+@inproceedings{cSegViT,
+  author = {Bowen Zhang and Zhi Tian and Quan Tang and Xiangxiang Chu and Xiaolin Wei and Chunhua Shen and Yifan Liu},
+  title = {SegViT: Semantic Segmentation with Plain Vision Transformers},
+  booktitle = NIPS,
+  year = {2022},
+}
+
+@inproceedings{cFANs,
+  author = {Daquan Zhou and Zhiding Yu and Enze Xie and Chaowei Xiao and Anima Anandkumar and Jiashi Feng and Jose M. Alvarez},
+  title = {Understanding The Robustness in Vision Transformers},
+  booktitle = ICML,
+  year = {2022},
+}
+
+@article{cAugReg,
+    title   = "How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers",
+    author  ="Andreas Peter Steiner and Alexander Kolesnikov and Xiaohua Zhai and Ross Wightman and Jakob Uszkoreit and Lucas Beyer",
+    journal = TMLR,
+    year    ="2022"
+}
+
+
+@inproceedings{cConvNeXtV2,
+  title={ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders},
+  author={Sanghyun Woo and Shoubhik Debnath and Ronghang Hu and Xinlei Chen and Zhuang Liu and In So Kweon and Saining Xie},
+  year={2023},
+  booktitle=CVPR
+}
+
+@inproceedings{cTSG,
+  title={Transformer Scale Gate for Semantic Segmentation},
+  author={Hengcan Shi and Munawar Hayat and Jianfei Cai},
+  year={2023},
+  booktitle=CVPR
+}
+
+@inproceedings{cGSS,
+  title={Generative Semantic Segmentation},
+  author={Jiaqi Chen and Jiachen Lu and Xiatian Zhu and Li Zhang},
+  year={2023},
+  booktitle=CVPR
+}
+
+@inproceedings{cDDP,
+  title={DDP: Diffusion Model for Dense Visual Predition},
+  author={Yuanfeng Ji and Zhe Chen and Enze Xie and Lanqing Hong and Xihui Liu and Zhaoqiang Liu and Tong Lu and Zhenguo Li and Ping Luo},
+  year={2023},
+  booktitle=ICCV
+}
+
+@inproceedings{cSTL,
+  title={Fully Attentional Networks with Self-emerging Token Labeling},
+  author={Bingyin Zhao and Zhiding Yu1 and Shiyi Lan and Yutao Cheng and Anima Anandkumar and Yingjie Lao and Jose M. Alvarez},
+  year={2023},
+  booktitle=ICCV
+}
+
+@inproceedings{cIDRNet,
+  title={IDRNet: Intervention-Driven Relation Network for Semantic Segmentation},
+  author={Zhenchao Jin and Xiaowei Hu and Lingting Zhu and Luchuan Song and Li Yuan and Lequan Yu},
+  year={2023},
+  booktitle=NIPS
+}
+
